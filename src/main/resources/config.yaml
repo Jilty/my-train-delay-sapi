@@ -1,0 +1,12 @@
+mysql:
+  host: "64.227.37.97"
+  port: "3306"
+  user: "njclabs"
+  password: "training"
+  database: "nrs"
+  
+nationalrail:
+  host: "https://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx?ver=2017-10-01"
+  port: "LDBServiceSoap12"
+  service: "ldb"
+  
