@@ -4,13 +4,13 @@ pipeline
   stages{
     stage('Build Application'){
       steps{
-    		sh 'mvn clean install -DskipTests'
+    		bat 'mvn clean install -DskipTests'
     	}
     }
     
     stage('Deploy Application to MuleSoft CloudHub'){
      steps{
-    		sh 'mvn package deploy -DmuleDeploy -DskipTests'
+    		bat 'mvn package deploy -DmuleDeploy -DskipTests'
     	}
     }
     
