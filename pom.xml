@@ -30,6 +30,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 			<configuration>
+			   <cloudHubDeployment>
+				    <uri>https://anypoint.mulesoft.com</uri>
+                    <muleVersion>4.1.1</muleVersion>
+				    <!-- Deploy User Parameter -->
+				    <username>JiltyVibin</username>
+				    <password>Jilty@123</password>
+				    <!-- Environment Parameter -->
+				    <environment>Sandbox</environment>
+				    <workers>1</workers>
+				    <applicationName>my-train-delay-services</applicationName>
+				    <workerType>Micro</workerType>
+				    <objectStoreV2>true</objectStoreV2>
+                </cloudHubDeployment>              
                     <sharedLibraries>
                         <sharedLibrary>
                             <groupId>mysql</groupId>
