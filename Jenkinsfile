@@ -10,7 +10,7 @@ pipeline
     
     stage('Deploy Application to MuleSoft CloudHub'){
      steps{
-    		bat 'mvn package deploy -DmuleDeploy -DskipTests'
+    		bat 'mvn package deploy -DmuleDeploy -DskipTests -X'
     	}
     }
     
